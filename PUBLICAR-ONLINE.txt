@@ -1,0 +1,20 @@
+CONTRLUCK — PUBLICAÇÃO ONLINE
+
+COMO PUBLICAR NO NETLIFY DROP
+1. Extraia o ZIP.
+2. Abra https://app.netlify.com/drop
+3. Arraste a PASTA ContrLuck-Site (não o ZIP) para o Netlify.
+4. O Netlify criará um link de acesso HTTPS.
+5. Para atualizar, publique novamente a pasta.
+
+ATENÇÃO SOBRE OS DADOS
+Esta versão é um site estático. Os orçamentos e relatórios são
+salvos somente no navegador do usuário. Publicar NÃO cria um banco
+de dados compartilhado, nem login para fornecedores.
+Faça backup dos registros na aba Configurações regularmente.
+
+SEGURANÇA
+Evite usar dados reais de CNPJ, contratos, preços sensíveis ou
+serviços sigilosos em computadores compartilhados. Para uso
+profissional multiusuário, será necessário acrescentar backend,
+banco de dados, autenticação e permissões de acesso.

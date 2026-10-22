@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1c35">
+  <meta name="description" content="ContrLuck - Orçamentos, execução de serviços e documentos em PDF, Word e Excel.">
+  <title>ContrLuck — Gestão de Serviços</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" aria-label="ContrLuck">
+        <div class="brand-mark"><span>C</span><i></i></div>
+        <div class="brand-name">Contr<span>Luck</span><small>GESTÃO DE SERVIÇOS</small></div>
+      </div>
+      <div class="nav-label">MENU PRINCIPAL</div>
+      <nav class="sidebar-nav" aria-label="Navegação principal">
+        <button type="button" class="nav-link is-active" data-nav="dashboard"><span class="nav-icon">▦</span> Visão geral</button>
+        <button type="button" class="nav-link" data-nav="quotes"><span class="nav-icon">▤</span> Orçamentos</button>
+        <button type="button" class="nav-link" data-nav="services"><span class="nav-icon">▧</span> Detalhamento de serviços</button>
+        <button type="button" class="nav-link" data-nav="history"><span class="nav-icon">◷</span> Histórico e documentos</button>
+      </nav>
+      <div class="nav-label nav-label-bottom">ADMINISTRAÇÃO</div>
+      <nav class="sidebar-nav"><button type="button" class="nav-link" data-nav="settings"><span class="nav-icon">⚙</span> Configurações</button></nav>
+      <div class="sidebar-bottom"><div class="side-tip"><span class="side-tip-icon">✦</span><strong>Documentos prontos</strong><p>Orçamentos e relatórios em PDF, Word e Excel, sem aplicativos adicionais.</p></div><div class="side-foot">ContrLuck <span>•</span> Versão 1.0</div></div>
+    </aside>
+    <div class="mobile-overlay" id="mobile-overlay" hidden></div>
+    <div class="main-layout">
+      <header class="topbar"><button type="button" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button><div class="breadcrumb">ÁREA DE TRABALHO <span>/</span> <strong id="crumb-title">Visão geral</strong></div><div class="top-actions"><span class="local-pill"><span class="dot"></span> Dados neste dispositivo</span><button class="top-new-btn" type="button" data-action="new-quote">+ Novo orçamento</button></div></header>
+      <main class="main-content" id="main-content" aria-live="polite"></main>
+    </div>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <script src="exports.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

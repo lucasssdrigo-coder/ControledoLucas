@@ -1,0 +1,89 @@
+CONTRLUCK — GESTÃO DE ORÇAMENTOS E SERVIÇOS
+Versão 1.0 | Site pronto para uso
+
+1. COMO ABRIR
+   - Extraia completamente o arquivo ZIP em uma pasta do computador.
+   - Clique duas vezes no arquivo index.html.
+   - Abra com Google Chrome, Microsoft Edge ou outro navegador moderno.
+   - Não precisa instalar aplicativos, bibliotecas ou criar conta.
+   - O visual se adapta a computadores, tablets e celulares.
+
+2. ORÇAMENTOS
+   - Acesse Orçamentos > Novo orçamento.
+   - Preencha os dados do fornecedor e do cliente (CNPJ/CPF, endereço,
+     cidade, UF, telefone, e-mail e contato).
+   - Informe a descrição geral, os itens, as quantidades e os preços.
+   - Informe eventuais despesas extras, descontos e condições comerciais.
+   - Salve para obter uma numeração automática (ORC-AAAA-0001).
+   - Exporte com os botões PDF, Word ou Excel.
+
+3. RELATÓRIO PÓS-SERVIÇO
+   - Acesse Detalhamento de serviços > Novo relatório.
+   - Se houver um orçamento já salvo, selecione-o na opção "Orçamento
+     de referência" ou clique em "Relatório" na lista de orçamentos.
+   - Escolha a modalidade: locação de Munck, sublocação, transporte,
+     içamento, manutenção, serviço 1401, serviço 1407 ou outros.
+   - O formulário apresenta perguntas próprias da modalidade escolhida.
+   - Para deslocamentos, preencha origem, destino e quilômetros; clique
+     em "+ Adicionar parada / trecho" para incluir quantas paradas precisar.
+     A quilometragem total será calculada pela soma dos trechos.
+   - Informe horários, descrição do trabalho, observações e valores reais.
+   - Salve para gerar o número REL-AAAA-0001 e exporte o documento.
+
+4. ADICIONAR OUTROS TIPOS DE SERVIÇO
+   - Vá a Configurações > Modelos de serviço.
+   - Digite um nome, por exemplo "Soldagem industrial".
+   - Digite uma pergunta por linha: processo, material, inspeção etc.
+   - Clique em "Criar modelo de serviço".
+   - O novo tipo aparecerá automaticamente no detalhamento.
+   - Dentro de cada relatório, você também pode criar perguntas livres.
+   - IMPORTANTE: 1401 e 1407 são nomes de modelos, não uma definição
+     de códigos fiscais ou da atividade executada. Ajuste conforme
+     os procedimentos internos da sua empresa.
+
+5. DADOS DA EMPRESA
+   - Em Configurações, cadastre a empresa fornecedora padrão.
+   - Isso preencherá automaticamente os próximos formulários.
+   - Cada orçamento e relatório conserva seus próprios dados.
+
+6. BACKUP E ARMAZENAMENTO — MUITO IMPORTANTE
+   - Esta versão funciona SEM um servidor ou banco de dados na nuvem.
+   - Os dados ficam APENAS no armazenamento local do navegador utilizado.
+   - Os dados NÃO são sincronizados entre computadores ou fornecedores.
+   - Limpar os dados do navegador pode apagar todos os cadastros.
+   - Em Configurações, use "Exportar backup" para salvar um arquivo JSON.
+   - Use "Importar backup" para restaurar o arquivo em outro navegador.
+   - O backup JSON contém os dados dos orçamentos e dos clientes em texto
+     simples: proteja-o como um documento comercial confidencial.
+
+7. DOCUMENTOS
+   - PDF: gerado diretamente, pronto para visualizar ou enviar.
+   - Word: formato .docx, editável no Microsoft Word ou programa compatível.
+   - Excel: formato .xlsx, com abas de resumo/itens ou resumo/rotas/
+     perguntas específicas e fórmulas de totais nas tabelas pertinentes.
+   - Confira todos os dados, preços, CNPJ e endereços antes de enviá-los.
+   - Os campos de quilômetros são manuais: não há consulta a mapas/GPS.
+   - O sistema é administrativo. Não substitui documentos fiscais, NFS-e,
+     validações fiscais ou registro formal de assinatura digital.
+
+8. COMO PUBLICAR UM ENDEREÇO DO SITE (OPCIONAL)
+   - Envie os quatro arquivos (index.html, styles.css, app.js, exports.js)
+     a uma hospedagem estática como GitHub Pages ou Netlify.
+   - Mesmo publicado, esta versão continua armazenando os cadastros
+     somente no navegador de cada pessoa.
+   - Para LOGIN, banco central, vários fornecedores e dados compartilhados,
+     seria necessária uma segunda versão com backend e permissões.
+
+Arquivos do site:
+ - index.html       Tela principal
+ - styles.css       Aparência e responsividade
+ - app.js           Regras de orçamento, relatórios e armazenamento
+ - exports.js       Geração de PDF, Word e Excel (sem dependências externas)
+
+Projeto ContrLuck | Interface em português do Brasil
+
+MIGRAÇÃO DE DADOS
+  - Dados novos ficam separados dos cadastros da versão antiga.
+  - Caso você tenha um backup da versão OperaFlow, importe-o usando
+    Configurações > Importar backup para recuperar os cadastros.
+  - Se trocar o domínio ou navegador, faça backup antes da mudança.
